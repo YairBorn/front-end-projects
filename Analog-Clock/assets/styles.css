@@ -190,11 +190,41 @@ a {
   z-index: var(--z-normal);
 }
 
-
 .clock-logo {
-    width: max-content;
-    justify-self:center;
-    margin-bottom: var(--mb-2-25);
-    font-size: var(--smaller-font-size);
-    font-weight: (var(--font-medium));
+  width: max-content;
+  justify-self: center;
+  margin-bottom: var(--mb-2-5);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color-light);
+  transition: 0.3s;
+}
+
+.clock-logo:hover {
+  color: var(--first-color);
+}
+
+.clock-text {
+  display: flex;
+  justify-content: center;
+}
+
+.clock-text-hour,
+.clock-text-minutes {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+
+.clock-text-ampm {
+  font-size: var(--tiny-font-size);
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  margin-left: var(--mb-0-25);
+}
+
+.clock-date {
+    text-align: center;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
 }
